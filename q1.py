@@ -1,9 +1,16 @@
+import numpy as np
+import scipy.stats as sts
 from numba.pycc import CC
+
 
 S = 1000
 T = 4160
 rho, mu, sigma = 0.5, 3.0, 1.0
 z_0 = mu
+
+np.random.seed(25)
+eps_mat = sts.norm.rvs(loc=0, scale=sigma, size=(T, S))
+z_mat = np.zeros((T, S))
 
 cc = CC('test_aot')
 
