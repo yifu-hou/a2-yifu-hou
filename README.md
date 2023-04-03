@@ -3,7 +3,7 @@ repository for assignment 2
 
 ### Q1
 
-Here's an `sbatch` script that will compile simulation function from Assignment 1 Question (1b) using ahead of time (`AOT`). Only a single core is requested in this sbatch script.
+Here's an [`sbatch` script](https://github.com/yifu-hou/a2-yifu-hou/blob/main/q1.sbatch) that will compile simulation function from Assignment 1 Question (1b) using ahead of time (`AOT`). Only a single core is requested in this sbatch script.
 
 ### Q2
 
